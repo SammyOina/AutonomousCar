@@ -7,6 +7,9 @@ def init():
     GPIO.setup(22, GPIO.OUT)
     GPIO.setup(23, GPIO.OUT)
     GPIO.setup(24, GPIO.OUT)
+    GPIO.setup(25, GPIO.OUT)
+    p=GPIO.PWM(en,1000)
+    p.start(25)
 
 def reverse(sec):
     init()
