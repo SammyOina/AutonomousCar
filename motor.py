@@ -8,8 +8,8 @@ def init():
     GPIO.setup(23, GPIO.OUT)
     GPIO.setup(24, GPIO.OUT)
     GPIO.setup(25, GPIO.OUT)
-    p=GPIO.PWM(en,1000)
-    p.start(25)
+    p=GPIO.PWM(25,1000)
+    p.start(75)
 
 def reverse(sec):
     init()
